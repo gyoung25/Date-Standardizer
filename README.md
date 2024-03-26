@@ -29,15 +29,15 @@ Overview:
 Models:
 
 > 1. LSTM without attention. Encoder layer is a bidirectional LSTM. Output from the last timestep is fed into a (unidirectional) LSTM decoder layer.
-2. LSTM with attention. Encoder layer is a bidirectional LSTM. Output <i> from each time step </i> **and** the hidden state from the previous time step of the decoder layer is fed into an attention layer, which passes the LSTM output and hidden state through a dense layer, then through a softmax layer that is used to calculate the context. The context is then fed into the decoder layer, which is a (unidirectional) LSTM.
-3. LSTM with approximated attention. Similar to the LSTM model with attention, but the attention layer does not receive the hidden state from the decoder layer and passes the output of the dense layer directly to the decoder layer.
+>2. LSTM with attention. Encoder layer is a bidirectional LSTM. Output <i> from each time step </i> **and** the hidden state from the previous time step of the decoder layer is fed into an attention layer, which passes the LSTM output and hidden state through a dense layer, then through a softmax layer that is used to calculate the context. The context is then fed into the decoder layer, which is a (unidirectional) LSTM.
+>3. LSTM with approximated attention. Similar to the LSTM model with attention, but the attention layer does not receive the hidden state from the decoder layer and passes the output of the dense layer directly to the decoder layer.
 
 Purpose: 
 > Demonstrate the effectiveness of LSTMs with attention performing NLP tasks.
 
 Datasets: 
 
-> A randomly generated dataset containing a prescribed number of dates in a variety of human-readable formats
+> A randomly generated dataset containing a prescribed number of dates in a variety of human-readable formats for training and validation. Output of dateFinder.py for testing.
 
 Target:
 
