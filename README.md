@@ -4,7 +4,7 @@ This repository contains two key pieces of code:
   1. dateFinder.py searches through a txt file, extracts all dates using RegEx, returns them as a pandas Series,         and optionally writes a new txt file containing the dates separated by line breaks (\n)
   2. date_standardizer_LSTMs.py trains three LSTM-based models to convert human-readable dates in any format into        machine-readable format. Details of the model architectures can be found in the .py file, but briefly, one is       a standard LSTM model, one is an LSTM model with attention, and one is an LSTM with a simple approximation to       attention.
 
-<u>dateFinder.py</u>
+dateFinder.py:
 
 This code is based on an assignment from the University of Michigan's Coursera course titled Appled Text Mining in Python.
 
@@ -16,7 +16,7 @@ The formatting of the dates in the notes varies quite a bit. For example, dates 
 
 Assumptions: dates missing a day will be assigned the first day of the month, 01. Dates missing a day and month will be assigned January first of the given year.
 
-<u>date_standardizer_LSTMs.py</u>
+date_standardizer_LSTMs.py:
 
 This code is based on an assignment from the DeepLearning.AI's Coursera course titled Sequence Models. I have expanded on the assignment by writing two models with different architectures and writing a helper function that facilitates model evaluation.
 
