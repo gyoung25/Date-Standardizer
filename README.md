@@ -6,7 +6,6 @@ This repository contains two key pieces of code:
 
 dateFinder.py:
 
-This code is based on an assignment from the University of Michigan's Coursera course titled Appled Text Mining in Python.
 
 This code is intended to demonstrate a nontrivial use of RegEx for text data extraction.
 
@@ -17,8 +16,6 @@ The formatting of the dates in the notes varies quite a bit. For example, dates 
 Assumptions: dates missing a day will be assigned the first day of the month, 01. Dates missing a day and month will be assigned January first of the given year.
 
 date_standardizer_LSTMs.py:
-
-This code is based on an assignment from the DeepLearning.AI's Coursera course titled Sequence Models. I have expanded on the assignment by writing two models with different architectures and writing a helper function that facilitates model evaluation.
 
 **Skills demonstrated:** LSTMs, attention, RNNs, NLP, tensorflow, data processing, model evaluation, general coding
 
